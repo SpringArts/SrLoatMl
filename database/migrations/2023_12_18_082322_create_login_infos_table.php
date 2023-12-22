@@ -22,7 +22,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->foreignId('admin_id')->constrained('admins')->cascadeOnDelete();
             $table->string('type', 10);
-            $table->int('time')->default(0)->unsigned();
+            $table->integer('time')->default(0)->unsigned();
             $table->timestamps();
         });
     }

@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->foreignId('language_id')->constrained('languages')->cascadeOnDelete();
-            $table->int('mark')->unsigned()->default(0);
-            $table->int('time')->unsigned()->default(0);
-            $table->int('total_question')->unsigned()->default(0);
-            $table->int('total_correct')->unsigned()->default(0);
-            $table->int('total_incorrect')->unsigned()->default(0);
+            $table->integer('mark')->unsigned()->default(0);
+            $table->integer('time')->unsigned()->default(0);
+            $table->integer('total_question')->unsigned()->default(0);
+            $table->integer('total_correct')->unsigned()->default(0);
+            $table->integer('total_incorrect')->unsigned()->default(0);
             $table->boolean('is_passed')->unsigned()->default(0);
             $table->timestamps();
         });

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('language_id')->constrained('languages')->cascadeOnDelete();
             $table->string('level', 20)->unique();
-            $table->int('order')->unsigned();
+            $table->integer('order')->unsigned();
             $table->timestamps();
         });
     }
