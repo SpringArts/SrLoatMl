@@ -12,9 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('languages', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('name', 50)->unique();
-            $table->int('total_level');
+            $table->integer('total_level');
             $table->timestamps();
         });
     }

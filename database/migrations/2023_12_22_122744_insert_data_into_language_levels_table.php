@@ -32,13 +32,13 @@ return new class extends Migration
                 "language_id" => 1,
             ],
             [
-                "id" => 1,
+                "id" => 4,
                 "level" => "n4",
                 "order" => 4,
                 "language_id" => 1,
             ],
             [
-                "id" => 1,
+                "id" => 5,
                 "level" => "n5",
                 "order" => 5,
                 "language_id" => 1,

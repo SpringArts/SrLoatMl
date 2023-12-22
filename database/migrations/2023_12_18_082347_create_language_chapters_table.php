@@ -12,10 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('language_chapters', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->foreignId('language_level_id')->constrained('language_levels')->cascadeOnDelete();
             $table->string('chapter', 20)->unique();
-            $table->int('order')->unsigned();
+            $table->integer('order')->unsigned();
             $table->timestamps();
         });
     }
