@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('language_chapters', function (Blueprint $table) {
             $table->id();
             $table->foreignId('language_level_id')->constrained('language_levels')->cascadeOnDelete();
-            $table->string('name', 20)->unique();
+            $table->string('chapter', 20)->unique();
             $table->int('order')->unsigned();
             $table->timestamps();
         });

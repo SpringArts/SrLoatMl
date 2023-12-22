@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('japanese_words', function (Blueprint $table) {
             $table->id();
             $table->string('hiragana', 50)->unique();
-            $table->string('katakana', 50)->unique();
             $table->string('kanji', 50)->unique();
             $table->string('romaji', 50)->unique();
             $table->string('english', 50)->unique();
