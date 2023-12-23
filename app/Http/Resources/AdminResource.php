@@ -19,7 +19,8 @@ class AdminResource extends JsonResource
             'id'      => $this->id,
             'name'    => $this->name,
             'email'   => $this->email,
-            'isActive' => $this->is_active
+            'isActive' => $this->is_active,
+            'role' => $this->role
         ];
     }
 }
