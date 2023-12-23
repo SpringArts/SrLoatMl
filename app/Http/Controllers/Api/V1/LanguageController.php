@@ -5,18 +5,20 @@ namespace App\Http\Controllers\Api\V1;
 use App\Helpers\ResponseHelper;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LanguageRequest;
+use App\Http\Resources\LanguageResource;
 use App\Models\Language;
 use App\Usecases\Language\LanguageAction;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class LanguageController extends Controller
 {
 
     protected $languageAction;
 
-    public function __construct(LanguageAction $LanguageAction)
+    public function __construct(LanguageAction $languageAction)
     {
-        $this->languageAction = $LanguageAction;
+        $this->languageAction = $languageAction;
     }
 
     /**
@@ -25,7 +27,7 @@ class LanguageController extends Controller
     public function index()
     {
         $data = $this->languageAction->fetchAllLanguages();
-        return ResponseHelper::success("Here are languages", $data);
+        return ResponseHelper::success("Successfully Fetched", LanguageResource::collection($data), Response::HTTP_OK);
     }
 
     /**
@@ -33,15 +35,16 @@ class LanguageController extends Controller
      */
     public function store(LanguageRequest $request)
     {
-        return ResponseHelper::success("Language is add successfully", $this->languageAction->store($request->all()));
+        $this->languageAction->store($request->all());
+        return ResponseHelper::success("Successfully Added", null, Response::HTTP_CREATED);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Language $language)
     {
-        return ResponseHelper::success(null, $this->languageAction->show($id));
+        return ResponseHelper::success('success', new LanguageResource($language));
     }
 
     /**
@@ -49,7 +52,8 @@ class LanguageController extends Controller
      */
     public function update(Request $request, Language $language)
     {
-        return ResponseHelper::success("Updated Successfully", $this->languageAction->update($request->all(), $language));
+        $this->languageAction->update($request->all(), $language);
+        return ResponseHelper::success("Updated Successfully", null, Response::HTTP_OK);
     }
 
     /**
@@ -57,6 +61,6 @@ class LanguageController extends Controller
      */
     public function destroy(Language $language)
     {
-        return ResponseHelper::success("Successfully deleted", $this->languageAction->delete($language));
+        return $this->languageAction->delete($language);
     }
 }

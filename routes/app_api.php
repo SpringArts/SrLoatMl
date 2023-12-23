@@ -3,8 +3,6 @@
 // routes/app_api.php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\UserController;
-use App\Http\Controllers\Auth\NewPasswordController;
+use App\Http\Controllers\Api\V1\LanguageController;
 
-
-Route::post('/reset-password', [NewPasswordController::class, 'changePassword']);
+Route::apiResource('/languages', LanguageController::class);

@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Respositories\Language;
+namespace App\Repositories\Language;
 
 use App\Interfaces\Language\LanguageInterface;
 use App\Models\Language;
 
-class LanguageRepository implements LanguageInterface {
+class LanguageRepository implements LanguageInterface
+{
 
     public function fetchLanguages(int $limit, int $page)
     {
@@ -22,7 +23,7 @@ class LanguageRepository implements LanguageInterface {
         return Language::create($data);
     }
 
-    public function update(array $data , Language $language)
+    public function update(array $data, Language $language)
     {
         return $language->update($data);
     }

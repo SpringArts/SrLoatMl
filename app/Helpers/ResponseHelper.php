@@ -8,19 +8,18 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class ResponseHelper
 {
-    public static function success($message , $data=null, $status = 200)
+    public static function success($message = "Successful", $data = null, $status = 200)
     {
         return response()->json(
             [
-            'result' => 1,
-            'msg' => $message,
-            'data' => $data
-        ],
+                'msg' => $message,
+                'data' => $data
+            ],
             $status
         );
     }
 
-    public static function fail($message , $data=null, $status = 502)
+    public static function fail($message = "Something went wrong", $status = 500)
     {
         return response()->json(
             [

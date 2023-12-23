@@ -1,46 +1,45 @@
 <?php
 
 
-namespace App\Usecases\Language;
-
+namespace App\UseCases\Language;
 
 use App\Interfaces\Language\LanguageInterface;
 use App\Models\Language;
 
 class LanguageAction
 {
-    private $languageRespository;
+    private $languageRepository;
 
-    public function __construct (LanguageInterface $languageRespository)
+    public function __construct(LanguageInterface $languageRepository)
     {
-        $this->languageRespository = $languageRespository;
+        $this->languageRepository = $languageRepository;
     }
 
     public function fetchAllLanguages()
     {
         $limit = request()->limit ?? 10;
         $page = request()->page ?? 1;
-        $data = $this->languageRespository->fetchLanguages($limit, $page);
+        $data = $this->languageRepository->fetchLanguages($limit, $page);
         return $data;
     }
 
     public function store(array $data)
     {
-        return $this->languageRespository->store($data);
+        return $this->languageRepository->store($data);
     }
 
     public function show(int $id)
     {
-        return $this->languageRespository->fetchLanguage($id);
+        return $this->languageRepository->fetchLanguage($id);
     }
 
     public function update(array $data, Language $language)
     {
-        return $this->languageRespository->update($data, $language);
+        return $this->languageRepository->update($data, $language);
     }
 
     public function delete(Language $language)
     {
-        return $this->languageRespository->delete($language);
+        return $this->languageRepository->delete($language);
     }
 }
