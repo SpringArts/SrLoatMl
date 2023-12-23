@@ -14,13 +14,13 @@ return new class extends Migration
     {
         $data = [
             [
-                "name" => "userOne",
-                "email" => "userOne@gmail.com",
+                "name" => "LMA",
+                "email" => "lwin@gmail.com",
                 "password" => "$2y$10$/wQTKHDVTKcZXxqvgXHR5.yOr6vjBkHoErWrI0vhnHCs6rhF8LTRW",
             ],
             [
-                "name" => "userTwo",
-                "email" => "userTwo@gmail.com",
+                "name" => "MHKK",
+                "email" => "min@gmail.com",
                 "password" => "$2y$10$/wQTKHDVTKcZXxqvgXHR5.yOr6vjBkHoErWrI0vhnHCs6rhF8LTRW",
             ],
 
