@@ -17,11 +17,19 @@ return new class extends Migration
                 "name" => "userOne",
                 "email" => "userOne@gmail.com",
                 "password" => "$2y$10$/wQTKHDVTKcZXxqvgXHR5.yOr6vjBkHoErWrI0vhnHCs6rhF8LTRW",
+                "role" => "normal",
             ],
             [
                 "name" => "userTwo",
                 "email" => "userTwo@gmail.com",
                 "password" => "$2y$10$/wQTKHDVTKcZXxqvgXHR5.yOr6vjBkHoErWrI0vhnHCs6rhF8LTRW",
+                "role" => "normal",
+            ],
+            [
+                "name" => "NormalAdmin",
+                "email" => "admin@gmail.com",
+                "password" => "$2y$10$/wQTKHDVTKcZXxqvgXHR5.yOr6vjBkHoErWrI0vhnHCs6rhF8LTRW",
+                "role" => "admin",
             ],
 
         ];
