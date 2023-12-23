@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\UseCases\Language;
 
 use App\Interfaces\Language\LanguageInterface;

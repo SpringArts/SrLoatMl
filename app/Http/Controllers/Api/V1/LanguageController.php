@@ -50,7 +50,7 @@ class LanguageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Language $language)
+    public function update(LanguageRequest $request, Language $language)
     {
         $this->languageAction->update($request->all(), $language);
         return ResponseHelper::success("Updated Successfully", null, Response::HTTP_OK);
