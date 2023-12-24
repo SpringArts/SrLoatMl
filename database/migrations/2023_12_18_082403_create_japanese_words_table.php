@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('kanji', 50);
             $table->string('romaji', 50);
             $table->string('english', 50);
-            $table->foreignId('language_level_id')->constrained('language_levels')->cascadeOnDelete();
             $table->foreignId('language_chapter_id')->constrained('language_chapters');
             $table->timestamps();
         });

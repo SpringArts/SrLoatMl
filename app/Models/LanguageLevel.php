@@ -14,4 +14,9 @@ class LanguageLevel extends Model
     {
         return $this->belongsTo(Language::class, 'language_id');
     }
+
+    public function languageChapters()
+    {
+        return $this->hasMany(LanguageChapter::class);
+    }
 }
