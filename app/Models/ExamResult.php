@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class ExamResult extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function japaneseWord()
+    {
+        return $this->belongsTo(JapaneseWord::class, 'japanese_word_id');
+    }
 }

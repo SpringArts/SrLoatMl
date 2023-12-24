@@ -15,4 +15,9 @@ class JapaneseWord extends Model
     {
         return $this->belongsTo(LanguageChapter::class, 'language_chapter_id');
     }
+
+    public function examResults()
+    {
+        return $this->hasMany(ExamResult::class, 'japanese_word_id');
+    }
 }
