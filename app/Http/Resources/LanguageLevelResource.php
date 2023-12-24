@@ -2,11 +2,11 @@
 
 namespace App\Http\Resources;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-/** @mixin \App\Models\User */
-class UserResource extends JsonResource
+class LanguageLevelResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,11 +16,11 @@ class UserResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'id'      => $this->id,
-            'name'    => $this->name,
-            'email'   => $this->email,
-            'isActive'  => $this->is_active,
-            'role'  => $this->role,
+            "id" => $this->id,
+            "language" => $this->language->name,
+            "level" => $this->level,
+            "order" => $this->order,
+            "createdAt" => Carbon::parse($this->created_at)->format('Y-m-d H:i:s'),
         ];
     }
 }
