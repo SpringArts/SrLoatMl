@@ -10,4 +10,9 @@ class JapaneseWord extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function languageChapter()
+    {
+        return $this->belongsTo(LanguageChapter::class, 'language_chapter_id');
+    }
 }
