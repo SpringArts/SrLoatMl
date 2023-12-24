@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class LanguageChapterResource extends JsonResource
+class ExamResultResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,10 +16,9 @@ class LanguageChapterResource extends JsonResource
     {
         return [
             "id" => $this->id,
-            "language" => $this->languageLevel->language->name,
-            "language_level" =>  $this->languageLevel->level,
-            "chapter" => $this->chapter,
-            "order" => $this->order,
+            "userId" => $this->user_id,
+            "japaneseWord" => $this->japaneseWord->kanji,
+            "isCorrect" => $this->is_correct,
         ];
     }
 }
