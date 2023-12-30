@@ -10,7 +10,13 @@ class WordRespository implements WordInterface
 
     public function fetchAllWords(int $limit, int $page)
     {
-        return JapaneseWord::paginate($limit, ['*'], 'page', $page)->withQueryString();
+        return JapaneseWord::when(request("languageChapterId"), function ($q){
+            $chapterId = request("languageChapterId");
+            $q->where('language_chapter_id', $chapterId);
+        })->when(request("languageLevelId"), function ($q){
+            $levelId = request("languageLevelId");
+            $q->where('language_level_id',$levelId);
+    })->paginate($limit, ['*'], 'page', $page)->withQueryString();
     }
 
     public function fetchSingleWord(int $id)

@@ -28,7 +28,7 @@ class WordController extends Controller
     public function index()
     {
         $data = $this->wordAction->fetchAllWords();
-        return ResponseHelper::success('Successfully fetched', WordResource::collection($data), Response::HTTP_OK);
+        return ResponseHelper::success('Successfully fetched', WordResource::collection($data), 200);
     }
 
     /**
