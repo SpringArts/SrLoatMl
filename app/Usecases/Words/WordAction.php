@@ -4,6 +4,7 @@ namespace App\UseCases\Words;
 
 use App\Interfaces\Words\WordInterface;
 use App\Models\JapaneseWord;
+use App\Services\Words\WordService;
 
 class WordAction {
 
@@ -18,7 +19,8 @@ class WordAction {
     {
         $limit = request()->limit ?? 10;
         $page = request()->page ?? 1;
-        return $this->wordRespository->fetchAllWords($limit, $page);
+        return WordService::fetchAllWords($limit , $page);
+//        return $this->wordRespository->fetchAllWords($limit, $page);
     }
 
     public function fetchSingleWord(JapaneseWord $japaneseWord)

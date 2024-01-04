@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Http;
 
 class WordController extends Controller
 {
-
     protected $wordAction;
 
     public function __construct(WordAction $wordAction)
@@ -28,7 +27,12 @@ class WordController extends Controller
     public function index()
     {
         $data = $this->wordAction->fetchAllWords();
-        return ResponseHelper::success('Successfully fetched', WordResource::collection($data), 200);
+        return \response()->json([
+            'message' => 'Successfully Fetched',
+            'data' => WordResource::collection($data),
+            'meta' => ResponseHelper::getPaginationMeta($data)
+        ]);
+//        return ResponseHelper::success('Successfully fetched', WordResource::collection($data), 200);
     }
 
     /**
