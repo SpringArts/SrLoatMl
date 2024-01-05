@@ -1,9 +1,11 @@
 <?php
 
-namespace App\UseCases\Exam;
+namespace App\Usecases\Exam;
 
+use App\Interfaces\Exam\ExamResultInterface;
+use App\Jobs\ExamCheckJob;
 use App\Models\ExamResult;
-use App\Interfaces\ExamResult\ExamResultInterface;
+use Illuminate\Support\Facades\Auth;
 
 class ExamResultAction
 {
@@ -18,13 +20,22 @@ class ExamResultAction
     {
         $limit = request()->limit ?? 10;
         $page = request()->page ?? 1;
-        $data = $this->examResultRepository->fetchExamResults($limit, $page);
-        return $data;
+        return $this->examResultRepository->fetchAllExamResults($limit, $page);
+    }
+
+    public function fetchSingleExamResult(ExamResult $examResult)
+    {
+        return $examResult;
     }
 
     public function store(array $data)
     {
-        return $this->examResultRepository->store($data);
+        $userId= Auth::id();
+        foreach ($data as $exam){
+            ExamCheckJob::dispatch($exam , $userId);
+        }
+        $data = $this->examResultRepository->fetchExamResults($limit, $page);
+        return $data;
     }
 
     public function show(int $id)

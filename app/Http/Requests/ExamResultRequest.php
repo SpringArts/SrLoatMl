@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\ExistsInJapaneseWordTable;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ExamResultRequest extends FormRequest
@@ -22,7 +23,8 @@ class ExamResultRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'data.*.id' => ['required','integer', new ExistsInJapaneseWordTable()],
+            'data.*.answer' => 'nullable|string|max:50'
         ];
     }
 }

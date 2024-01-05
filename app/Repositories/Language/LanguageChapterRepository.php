@@ -12,7 +12,10 @@ class LanguageChapterRepository implements LanguageChapterInterface
 
     public function fetchLanguageChapters(int $limit, int $page)
     {
-        return LanguageChapter::paginate($limit , ["*"] ,"page", $page)->withQueryString();
+        return LanguageChapter::when(request("languageLevelId"), function ($q){
+            $languageLevelId = request("languageLevelId");
+            $q->where("language_level_id", $languageLevelId);
+        })->paginate($limit , ["*"] ,"page", $page)->withQueryString();
     }
 
     public function fetchLanguageChapter(int $id)

@@ -25,7 +25,7 @@ class LanguageChapterController extends Controller
     public function index()
     {
         $data = $this->languageChapterAction->fetchLanguageChapters();
-        return ResponseHelper::success('Fetched Successfully', LanguageChapterResource::collection($data), Response::HTTP_OK);
+        return ResponseHelper::success('Fetched Successfully par okey ly', LanguageChapterResource::collection($data), Response::HTTP_OK);
     }
 
     /**

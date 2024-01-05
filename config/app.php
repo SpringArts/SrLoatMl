@@ -174,6 +174,8 @@ return [
         App\Providers\LanguageServiceProvider::class,
         App\Providers\LanguageLevelServiceProvider::class,
         App\Providers\LanguageChapterServiceProvider::class,
+        App\Providers\WordServiceProvider::class,
+        App\Providers\ExamResultServiceProvider::class
     ])->toArray(),
 
     /*
