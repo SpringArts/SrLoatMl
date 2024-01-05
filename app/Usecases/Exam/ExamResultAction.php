@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Usecases\Exam;
-
 
 use App\Interfaces\Exam\ExamResultInterface;
 use App\Jobs\ExamCheckJob;
@@ -36,5 +34,22 @@ class ExamResultAction
         foreach ($data as $exam){
             ExamCheckJob::dispatch($exam , $userId);
         }
+        $data = $this->examResultRepository->fetchExamResults($limit, $page);
+        return $data;
+    }
+
+    public function show(int $id)
+    {
+        return $this->examResultRepository->fetchExamResult($id);
+    }
+
+    public function update(array $data, ExamResult $examResult)
+    {
+        return $this->examResultRepository->update($data, $examResult);
+    }
+
+    public function delete(ExamResult $examResult)
+    {
+        return $this->examResultRepository->delete($examResult);
     }
 }

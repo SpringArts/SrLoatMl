@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('password');
             $table->boolean('is_active')->default(true);
             $table->enum('role', ['normal'])->default('normal');
+            $table->string('provider_name', 20)->nullable();
+            $table->string('provider_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
