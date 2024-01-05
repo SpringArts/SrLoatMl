@@ -10,7 +10,10 @@ class LanguageLevelRepository implements LanguageLevelInterface
 
     public function fetchLanguageLevels(int $limit, int $page)
     {
-        return LanguageLevel::paginate($limit, ["*"], "page", $page)->withQueryString();
+        return LanguageLevel::when(request("languageId") , function ($q){
+            $languageId = request("languageId");
+            $q->where("language_id",$languageId);
+        })->paginate($limit , ["*"], "page",$page)->withQueryString();
     }
 
     public function fetchLanguageLevel(int $id)
