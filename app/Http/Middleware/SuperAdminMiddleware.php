@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Enums\UserRole;
 use Closure;
 use App\Models\Admin;
 use Illuminate\Support\Str;
@@ -22,7 +23,7 @@ class SuperAdminMiddleware
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
-        if (!Auth::user() instanceof Admin && !Auth::user()->is_super_admin) {
+        if (!Auth::user() instanceof Admin && !Auth::user()->role === UserRole::SUPER_ADMIN) {
             return response()->json(['error' => 'Unauthenticated'], 403);
         }
 

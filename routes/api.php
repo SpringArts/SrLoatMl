@@ -17,5 +17,5 @@ Route::prefix('app')->middleware(['auth:sanctum', 'user'])->group(function () {
 });
 
 Route::prefix('console')->middleware(['auth:sanctum', 'super_admin'])->group(function () {
-    require __DIR__ . '/console.php';
+    require __DIR__ . '/console_api.php';
 });
