@@ -28,8 +28,6 @@ class AuthService
             [
                 'name' => $user->getName(),
                 'email' => $user->getEmail(),
-                'password' => bcrypt($user->getId()),
-
             ]
         );
     }
