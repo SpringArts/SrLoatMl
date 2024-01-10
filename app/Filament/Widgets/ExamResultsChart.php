@@ -2,7 +2,10 @@
 
 namespace App\Filament\Widgets;
 
+use App\Models\ExamResult;
 use Filament\Widgets\ChartWidget;
+use Flowframe\Trend\Trend;
+use Flowframe\Trend\TrendValue;
 
 class ExamResultsChart extends ChartWidget
 {
@@ -11,21 +14,27 @@ class ExamResultsChart extends ChartWidget
 
     protected function getData(): array
     {
+        $data = Trend::model(ExamResult::class)
+        ->between(
+            start: now()->startOfMonth(),
+            end: now()->endOfMonth(),
+        )
+        ->perDay()
+        ->count();
+
         return [
             'datasets' => [
                 [
-                    'label' => 'Blog posts created',
-                    'data' => [0, 10, 5, 2, 21, 32, 45, 74, 65, 45, 77, 89],
-                    'backgroundColor' => '#36A2EB',
-                    'borderColor' => '#9BD0F5',
+                    'label' => 'Exam Result charts',
+                    'data' => $data->map(fn (TrendValue $value) => $value->aggregate),
                 ],
             ],
-            'labels' => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            'labels' => $data->map(fn (TrendValue $value) => $value->date),
         ];
     }
 
     protected function getType(): string
     {
-        return 'bar';
+        return 'line';
     }
 }

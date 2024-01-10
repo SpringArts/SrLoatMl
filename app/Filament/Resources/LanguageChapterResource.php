@@ -77,7 +77,7 @@ class LanguageChapterResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\JapaneseLanguageWordsRelationManager::class
         ];
     }
 
