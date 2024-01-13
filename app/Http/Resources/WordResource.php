@@ -21,7 +21,7 @@ class WordResource extends JsonResource
             'kanji' => $this->kanji,
             'romaji' => $this->romaji,
             'english' => $this->english,
-            'languageLevel' => $this->languageLevel->level,
+//            'languageLevel' => $this->languageLevel->level,
             'languageChapter' => $this->languageChapter->chapter,
             'createdAt' => Carbon::parse($this->created_at)->format("Y-m-D H:i:s")
         ];

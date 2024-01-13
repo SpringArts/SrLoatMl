@@ -21,7 +21,6 @@ class JapaneseWord extends Model
         return $this->belongsTo(LanguageChapter::class, 'language_chapter_id');
     }
 
-
     public function languageLevel()
     {
         return $this->belongsTo(LanguageLevel::class, 'language_level_id');

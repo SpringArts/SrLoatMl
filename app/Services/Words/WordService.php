@@ -16,10 +16,6 @@ class WordService
             $chapterId = request("languageChapterId");
             $q->where('language_chapter_id', $chapterId);
         })
-            ->when(request("languageLevelId"), function ($q){
-                $levelId = request("languageLevelId");
-                $q->where('language_level_id', $levelId);
-            })
             ->when(!self::hasAnsweredQuestions(Auth::id()), function ($q) {
                 // If there are exam results, exclude answered words
                 $q->whereNotIn('id', function ($subQuery) {

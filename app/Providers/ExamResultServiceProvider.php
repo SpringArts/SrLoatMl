@@ -3,8 +3,9 @@
 
 namespace App\Providers;
 
-use App\Interfaces\Exam\ExamResultInterface;
-use App\Repositories\Exam\ExamResultRepository;
+
+use App\Interfaces\ExamResult\ExamResultInterface;
+use App\Repositories\ExamResult\ExamResultRepository;
 use Illuminate\Support\ServiceProvider;
 
 
