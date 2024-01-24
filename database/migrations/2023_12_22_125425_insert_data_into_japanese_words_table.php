@@ -1415,6 +1415,534 @@ return new class extends Migration
 
                 "language_chapter_id" => 3,
             ],
+            [
+                "id" => 157,
+                "romaji" => "geijyutsu",
+                "kanji" => "芸術",
+                "hiragana" => "げいじゅつ",
+                "english" => "the art",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 158,
+                "romaji" => "gijyutsu",
+                "kanji" => "技術",
+                "hiragana" => "ぎじゅつ",
+                "english" => "techique, technology",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 159,
+                "romaji" => "mezurashi",
+                "kanji" => "珍しい",
+                "hiragana" => "めずらしい",
+                "english" => "unusual",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 160,
+                "romaji" => "kigu",
+                "kanji" => "器具",
+                "hiragana" => "きぐ",
+                "english" => "implement",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 161,
+                "romaji" => "gakki",
+                "kanji" => "楽器",
+                "hiragana" => "がっき",
+                "english" => "instrument",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 162,
+                "romaji" => "shokki",
+                "kanji" => "食器",
+                "hiragana" => "しょっき",
+                "english" => "tableware",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 163,
+                "romaji" => "youki",
+                "kanji" => "容器",
+                "hiragana" => "ようき",
+                "english" => "receptacle",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 164,
+                "romaji" => "engisuru",
+                "kanji" => "演技する",
+                "hiragana" => "えんぎする",
+                "english" => "to dramatize",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 165,
+                "romaji" => "ensousuru",
+                "kanji" => "演奏する",
+                "hiragana" => "えんそうする",
+                "english" => "to perform, to play",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 166,
+                "romaji" => "engeki",
+                "kanji" => "演劇",
+                "hiragana" => "えんげき",
+                "english" => "dramatic performance",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 167,
+                "romaji" => "gekijyou",
+                "kanji" => "劇場",
+                "hiragana" => "げきじょう",
+                "english" => "theatre",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 168,
+                "romaji" => "geki",
+                "kanji" => "劇",
+                "hiragana" => "げき",
+                "english" => "drama",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 169,
+                "romaji" => "odoru",
+                "kanji" => "踊る",
+                "hiragana" => "おどる",
+                "english" => "dance",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 170,
+                "romaji" => "mimau",
+                "kanji" => "見舞う",
+                "hiragana" => "みまう",
+                "english" => "to visit",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 171,
+                "romaji" => "omimai",
+                "kanji" => "お見舞い",
+                "hiragana" => "おみまい",
+                "english" => "to visit inquiring about someone's health",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 172,
+                "romaji" => "butai",
+                "kanji" => "舞台",
+                "hiragana" => "ぶたい",
+                "english" => "stage performance",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 173,
+                "romaji" => "touitsu",
+                "kanji" => "統一",
+                "hiragana" => "とういつ",
+                "english" => "unity",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 174,
+                "romaji" => "toukei",
+                "kanji" => "統計",
+                "hiragana" => "とうけい",
+                "english" => "statistics",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 175,
+                "romaji" => "dentou",
+                "kanji" => "伝統",
+                "hiragana" => "でんとう",
+                "english" => "tradition",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 176,
+                "romaji" => "dentotekina",
+                "kanji" => "伝統的な",
+                "hiragana" => "でんとうてきな",
+                "english" => "traditionally",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 177,
+                "romaji" => "daitouryou",
+                "kanji" => "大都利用",
+                "hiragana" => "だいとうりょう",
+                "english" => "president",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 178,
+                "romaji" => "rekishi",
+                "kanji" => "歴史",
+                "hiragana" => "れきし",
+                "english" => "history",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 179,
+                "romaji" => "nihonshi",
+                "kanji" => "日本史",
+                "hiragana" => "にほんし",
+                "english" => "Japanese's history",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 180,
+                "romaji" => "nobiru",
+                "kanji" => "伸びる",
+                "hiragana" => "のびる",
+                "english" => "to stretch",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 181,
+                "romaji" => "nobasu",
+                "kanji" => "延ばす",
+                "hiragana" => "のばす",
+                "english" => "to elongate",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 182,
+                "romaji" => "enkisuru",
+                "kanji" => "延期する",
+                "hiragana" => "えんきする",
+                "english" => "to defer",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 183,
+                "romaji" => "enchousuru",
+                "kanji" => "延長する",
+                "hiragana" => "えんちょうする",
+                "english" => "to prolong",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 184,
+                "romaji" => "issho",
+                "kanji" => "一緒",
+                "hiragana" => "いっしょ",
+                "english" => "together",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 185,
+                "romaji" => "nendo",
+                "kanji" => "年度",
+                "hiragana" => "ねんど",
+                "english" => "fiscal year, financial year",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 186,
+                "romaji" => "kakudo",
+                "kanji" => "角度",
+                "hiragana" => "かくど",
+                "english" => "angle",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 187,
+                "romaji" => "teido",
+                "kanji" => "程度",
+                "hiragana" => "ていど",
+                "english" => "extent",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 188,
+                "romaji" => "shitakusuru",
+                "kanji" => "支度する",
+                "hiragana" => "したくする",
+                "english" => "to prepare",
+                "language_chapter_id" => 6
+            ],
+            [
+                "id" => 189,
+                "romaji" => "tenjisuru",
+                "kanji" => "展示する",
+                "hiragana" => "てんじする",
+                "english" => "to display",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 190,
+                "romaji" => "tenkai",
+                "kanji" => "展開",
+                "hiragana" => "てんかい",
+                "english" => "to develop",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 191,
+                "romaji" => "hatten",
+                "kanji" => "発展",
+                "hiragana" => "はってん",
+                "english" => "to advance",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 192,
+                "romaji" => "shimesu",
+                "kanji" => "示す",
+                "hiragana" => "しめす",
+                "english" => "to show",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 193,
+                "romaji" => "shijisuru",
+                "kanji" => "指示すると",
+                "hiragana" => "しじする",
+                "english" => "to indicate",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 194,
+                "romaji" => "hyoujisuru",
+                "kanji" => "表示する",
+                "hiragana" => "ひょじする",
+                "english" => "to display",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 195,
+                "romaji" => "mawari",
+                "kanji" => "周り",
+                "hiragana" => "まわり",
+                "english" => "vicinity",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 196,
+                "romaji" => "shuuhen",
+                "kanji" => "周辺",
+                "hiragana" => "しゅうへん",
+                "english" => "surroundings",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 197,
+                "romaji" => "shuui",
+                "kanji" => "周囲",
+                "hiragana" => "しゅうい",
+                "english" => "circumference",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 198,
+                "romaji" => "majiru",
+                "kanji" => "混じる",
+                "hiragana" => "まじる",
+                "english" => "to be mixed",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 199,
+                "romaji" => "mazaru",
+                "kanji" => "混ざる",
+                "hiragana" => "まざる",
+                "english" => "to be mixed",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 200,
+                "romaji" => "mazeru",
+                "kanji" => "混ぜる",
+                "hiragana" => "まぜる",
+                "english" => "to mix",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 201,
+                "romaji" => "konzatsusuru",
+                "kanji" => "混雑する",
+                "hiragana" => "こんざつする",
+                "english" => "to be crowded",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 202,
+                "romaji" => "kongousuru",
+                "kanji" => "混合する",
+                "hiragana" => "こんごうする",
+                "english" => "to blend",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 203,
+                "romaji" => "motomeru",
+                "kanji" => "求める",
+                "hiragana" => "もとめる",
+                "english" => "to seek",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 204,
+                "romaji" => "youkyuusuru",
+                "kanji" => "要求する",
+                "hiragana" => "ようきゅうする",
+                "english" => "to request",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 205,
+                "romaji" => "saini",
+                "kanji" => "際に",
+                "hiragana" => "さいに",
+                "english" => "upon",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 206,
+                "romaji" => "kokusaiteki",
+                "kanji" => "国際的な",
+                "hiragana" => "こくさいてきな",
+                "english" => "international",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 207,
+                "romaji" => "kousaisuru",
+                "kanji" => "交際する",
+                "hiragana" => "こうさいする",
+                "english" => "associate with",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 208,
+                "romaji" => "ranbou",
+                "kanji" => "乱暴な",
+                "hiragana" => "らんぼうな",
+                "english" => "violet",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 209,
+                "romaji" => "jyun",
+                "kanji" => "順",
+                "hiragana" => "じゅん",
+                "english" => "order",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 210,
+                "romaji" => "jyunban",
+                "kanji" => "順番",
+                "hiragana" => "じゅんばん",
+                "english" => "order",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 211,
+                "romaji" => "ranbousuru",
+                "kanji" => "乱暴する",
+                "hiragana" => "らんぼうする",
+                "english" => "to be violet",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 212,
+                "romaji" => "konransuru",
+                "kanji" => "混乱する",
+                "hiragana" => "こんらんする",
+                "english" => "to be confused",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 213,
+                "romaji" => "jyunjyo",
+                "kanji" => "順序",
+                "hiragana" => "じゅんじょう",
+                "english" => "sequence",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 214,
+                "romaji" => "jyunchou",
+                "kanji" => "順調",
+                "hiragana" => "じゅんちょう",
+                "english" => "favorable",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 215,
+                "romaji" => "saiketsuna",
+                "kanji" => "清潔な",
+                "hiragana" => "せいけつな",
+                "english" => "hygenic",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 216,
+                "romaji" => "seishosuru",
+                "kanji" => "清書する",
+                "hiragana" => "せいしょする",
+                "english" => "to make clean copy",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 217,
+                "romaji" => "sumi",
+                "kanji" => "隅",
+                "hiragana" => "すみ",
+                "english" => "cornor",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 218,
+                "romaji" => "sumizumi",
+                "kanji" => "隅々",
+                "hiragana" => "すみずみ",
+                "english" => "ins nd out",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 219,
+                "romaji" => "kouzoubiru",
+                "kanji" => "高層ビル",
+                "hiragana" => "こうそうビル",
+                "english" => "skyscraper",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 220,
+                "romaji" => "okuru",
+                "kanji" => "贈る",
+                "hiragana" => "おくる",
+                "english" => "to confer",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 221,
+                "romaji" => "okurimono",
+                "kanji" => "贈り物",
+                "hiragana" => "おくりもの",
+                "english" => "gift",
+                "language_chapter_id" => 7
+            ],
+            [
+                "id" => 222,
+                "romaji" => "odori",
+                "kanji" => "踊り",
+                "hiragana" => "おどり",
+                "english" => "to dance",
+                "language_chapter_id" => 6
+            ],
         ];
         DB::table('japanese_words')->insert($data);
     }

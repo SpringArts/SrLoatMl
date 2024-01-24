@@ -16,9 +16,9 @@ class VerifyIsAdminMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(Auth::user()->role === 'superAdmin'){
+        if(Auth::user() && Auth::user()->role === 'superAdmin'){
             return \request($next);
         }
-        return abort(403, "You don't have permission to access this page.");
+        return redirect("/login");
     }
 }

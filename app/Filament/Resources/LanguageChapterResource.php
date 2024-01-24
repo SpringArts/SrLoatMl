@@ -6,6 +6,7 @@ use App\Filament\Resources\LanguageChapterResource\Pages;
 use App\Filament\Resources\LanguageChapterResource\RelationManagers;
 use App\Models\LanguageChapter;
 use Filament\Forms;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -27,9 +28,13 @@ class LanguageChapterResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('language_level_id')
-                    ->required()
-                    ->numeric(),
+                Select::make('language_level_id')
+                    ->relationship("languageLevel", "level")
+                    ->searchable()
+                    ->preload()
+                    ->live()
+                    ->native(false)
+                    ->required(),
                 Forms\Components\TextInput::make('chapter')
                     ->required()
                     ->maxLength(20),
