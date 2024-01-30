@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('user-agent', 50);
             $table->string('platform', 20);
             $table->string('country', 20);
-            $table->string('provider', 20);
-            $table->string('provider_id');
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->foreignId('admin_id')->constrained('admins')->cascadeOnDelete();
             $table->string('type', 10);

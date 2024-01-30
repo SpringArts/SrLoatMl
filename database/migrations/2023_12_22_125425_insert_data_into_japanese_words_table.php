@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
@@ -19,7 +17,7 @@ return new class extends Migration
                 "hiragana" => "あまい",
                 "romaji" => "amai",
                 "english" => "sweet",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -28,7 +26,7 @@ return new class extends Migration
                 "hiragana" => "あまやかす",
                 "romaji" => "amayakasu",
                 "english" => "to spoil",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -37,7 +35,7 @@ return new class extends Migration
                 "hiragana" => "あまくち",
                 "romaji" => "amakuchi",
                 "english" => "sweet taste",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -46,7 +44,7 @@ return new class extends Migration
                 "hiragana" => "おゆ",
                 "romaji" => "oyu",
                 "english" => "hot water",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -55,7 +53,7 @@ return new class extends Migration
                 "hiragana" => "ゆげ",
                 "romaji" => "yuge",
                 "english" => "steam",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -64,7 +62,7 @@ return new class extends Migration
                 "hiragana" => "わく",
                 "romaji" => "waku",
                 "english" => "to boil",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -73,7 +71,7 @@ return new class extends Migration
                 "hiragana" => "わかす",
                 "romaji" => "wakasu",
                 "english" => "to boil",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -82,7 +80,7 @@ return new class extends Migration
                 "hiragana" => "きんこ",
                 "romaji" => "kinko",
                 "english" => "safe, vault",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -91,7 +89,7 @@ return new class extends Migration
                 "hiragana" => "しゃこ",
                 "romaji" => "shako",
                 "english" => "garage",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -100,7 +98,7 @@ return new class extends Migration
                 "hiragana" => "れいぞうこ",
                 "romaji" => "reizouko",
                 "english" => "refrigerator",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -109,7 +107,7 @@ return new class extends Migration
                 "hiragana" => "くだもの",
                 "romaji" => "kudamono",
                 "english" => "fruit",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -118,7 +116,7 @@ return new class extends Migration
                 "hiragana" => "けっか",
                 "romaji" => "kekka",
                 "english" => "result",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -127,7 +125,7 @@ return new class extends Migration
                 "kanji" => "効果",
                 "hiragana" => "こうか",
                 "english" => "effect",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -136,7 +134,7 @@ return new class extends Migration
                 "kanji" => "皮",
                 "hiragana" => "かわ",
                 "english" => "skin, peel",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -145,7 +143,7 @@ return new class extends Migration
                 "kanji" => "毛皮",
                 "hiragana" => "けがわ",
                 "english" => "fur, skin",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -154,7 +152,7 @@ return new class extends Migration
                 "kanji" => "皮肉",
                 "hiragana" => "ひんにく",
                 "english" => "irony",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -163,7 +161,7 @@ return new class extends Migration
                 "kanji" => "凍る",
                 "hiragana" => "こおる",
                 "english" => "to freeze",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -172,7 +170,7 @@ return new class extends Migration
                 "kanji" => "凍える",
                 "hiragana" => "こごえる",
                 "english" => "to freeze",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -181,7 +179,7 @@ return new class extends Migration
                 "kanji" => "冷凍食品",
                 "hiragana" => "れいとうしょくひん",
                 "english" => "frozen food",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -190,7 +188,7 @@ return new class extends Migration
                 "kanji" => "氷",
                 "hiragana" => "こおり",
                 "english" => "ice",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -199,7 +197,7 @@ return new class extends Migration
                 "kanji" => "乾杯する",
                 "hiragana" => "かんぱいする",
                 "english" => "to toast",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -208,7 +206,7 @@ return new class extends Migration
                 "kanji" => "制限する",
                 "hiragana" => "せいげんする",
                 "english" => "to restrict",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -217,7 +215,7 @@ return new class extends Migration
                 "kanji" => "制度",
                 "hiragana" => "せいど",
                 "english" => "system",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -226,7 +224,7 @@ return new class extends Migration
                 "kanji" => "制服",
                 "hiragana" => "せいふく",
                 "english" => "uniform",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -235,7 +233,7 @@ return new class extends Migration
                 "kanji" => "製品",
                 "hiragana" => "せいひん",
                 "english" => "product",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -244,7 +242,7 @@ return new class extends Migration
                 "kanji" => "製造",
                 "hiragana" => "せいぞう",
                 "english" => "manufacture",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -253,7 +251,7 @@ return new class extends Migration
                 "kanji" => "日本製",
                 "hiragana" => "にほんせい",
                 "english" => "made in japan",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 4,
             ],
             [
@@ -262,7 +260,7 @@ return new class extends Migration
                 "kanji" => "季節",
                 "hiragana" => "きせつ",
                 "english" => "season",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -271,7 +269,7 @@ return new class extends Migration
                 "kanji" => "四季",
                 "hiragana" => "しき",
                 "english" => "four seasons",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -280,7 +278,7 @@ return new class extends Migration
                 "kanji" => "雨季",
                 "hiragana" => "うき",
                 "english" => "rainy season",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -289,7 +287,7 @@ return new class extends Migration
                 "kanji" => "節約する",
                 "hiragana" => "せつやくする",
                 "english" => "to economize",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -298,7 +296,7 @@ return new class extends Migration
                 "kanji" => "節電する",
                 "hiragana" => "せつでんする",
                 "english" => "to save electricity",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -307,7 +305,7 @@ return new class extends Migration
                 "kanji" => "調節する",
                 "hiragana" => "ちょうせつする",
                 "english" => "to adjust",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -316,7 +314,7 @@ return new class extends Migration
                 "kanji" => "涼しい",
                 "hiragana" => "すずしい",
                 "english" => "cool",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -325,7 +323,7 @@ return new class extends Migration
                 "kanji" => "湿る",
                 "hiragana" => "しめる",
                 "english" => "to be wet",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -334,7 +332,7 @@ return new class extends Migration
                 "kanji" => "湿度",
                 "hiragana" => "しつど",
                 "english" => "humidity",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -343,7 +341,7 @@ return new class extends Migration
                 "kanji" => "湿気",
                 "hiragana" => "しつけ",
                 "english" => "moisture",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -352,7 +350,7 @@ return new class extends Migration
                 "kanji" => "移る",
                 "hiragana" => "うつる",
                 "english" => "to move, to transfer",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -361,7 +359,7 @@ return new class extends Migration
                 "kanji" => "移す",
                 "hiragana" => "うつす",
                 "english" => "to move",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -370,7 +368,7 @@ return new class extends Migration
                 "kanji" => "移動する",
                 "hiragana" => "いどうする",
                 "english" => "to move",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -379,7 +377,7 @@ return new class extends Migration
                 "kanji" => "移転する",
                 "hiragana" => "いてんする",
                 "english" => "to move, to relocate",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -388,7 +386,7 @@ return new class extends Migration
                 "kanji" => "布",
                 "hiragana" => "ぬの",
                 "english" => "cloth",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -397,7 +395,7 @@ return new class extends Migration
                 "kanji" => "布団",
                 "hiragana" => "ふとん",
                 "english" => "futon",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -406,7 +404,7 @@ return new class extends Migration
                 "kanji" => "毛布",
                 "hiragana" => "もうふ",
                 "english" => "blanket",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -415,7 +413,7 @@ return new class extends Migration
                 "kanji" => "財布",
                 "hiragana" => "さいふ",
                 "english" => "wallet",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -424,7 +422,7 @@ return new class extends Migration
                 "kanji" => "口紅",
                 "hiragana" => "くちべに",
                 "english" => "lipstick",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -433,7 +431,7 @@ return new class extends Migration
                 "kanji" => "紅茶",
                 "hiragana" => "こうちゃ",
                 "english" => "black tea",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -442,7 +440,7 @@ return new class extends Migration
                 "kanji" => "言葉",
                 "hiragana" => "ことば",
                 "english" => "word",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -451,7 +449,7 @@ return new class extends Migration
                 "kanji" => "紅葉",
                 "hiragana" => "こうよう",
                 "english" => "autumn leaves",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -460,7 +458,7 @@ return new class extends Migration
                 "kanji" => "自ら",
                 "hiragana" => "みずから",
                 "english" => "oneself",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -469,7 +467,7 @@ return new class extends Migration
                 "kanji" => "自身",
                 "hiragana" => "じしん",
                 "english" => "self",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -478,7 +476,7 @@ return new class extends Migration
                 "kanji" => "自信",
                 "hiragana" => "じしん",
                 "english" => "confidence",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -487,7 +485,7 @@ return new class extends Migration
                 "kanji" => "各自",
                 "hiragana" => "かくじ",
                 "english" => "each person",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -496,7 +494,7 @@ return new class extends Migration
                 "kanji" => "自然",
                 "hiragana" => "しぜん",
                 "english" => "nature",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -505,7 +503,7 @@ return new class extends Migration
                 "kanji" => "肌",
                 "hiragana" => "はだ",
                 "english" => "skin",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -514,7 +512,7 @@ return new class extends Migration
                 "kanji" => "触る",
                 "hiragana" => "さわる",
                 "english" => "to touch",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -523,7 +521,7 @@ return new class extends Migration
                 "kanji" => "触れる",
                 "hiragana" => "ふれる",
                 "english" => "to contact",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -532,7 +530,7 @@ return new class extends Migration
                 "kanji" => "肌触り",
                 "hiragana" => "はだざわり",
                 "english" => "feel of the skin",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -541,7 +539,7 @@ return new class extends Migration
                 "kanji" => "荒い",
                 "hiragana" => "あらい",
                 "english" => "rough",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -550,7 +548,7 @@ return new class extends Migration
                 "kanji" => "荒れる",
                 "hiragana" => "あれる",
                 "english" => "to be stormy",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 1,
             ],
             [
@@ -559,7 +557,7 @@ return new class extends Migration
                 "kanji" => "衣類",
                 "hiragana" => "いるい",
                 "english" => "clothes",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -568,7 +566,7 @@ return new class extends Migration
                 "kanji" => "衣服",
                 "hiragana" => "いふく",
                 "english" => "garments",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -577,7 +575,7 @@ return new class extends Migration
                 "kanji" => "衣食住",
                 "hiragana" => "いしょくじゅう",
                 "english" => "housing, food and clothing",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -586,7 +584,7 @@ return new class extends Migration
                 "kanji" => "浴衣",
                 "hiragana" => "ゆかた",
                 "english" => "summer kimono",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -595,7 +593,7 @@ return new class extends Migration
                 "kanji" => "洗濯する",
                 "hiragana" => "せんたくする",
                 "english" => "to wash",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -604,7 +602,7 @@ return new class extends Migration
                 "kanji" => "洗濯機",
                 "hiragana" => "せんたくき",
                 "english" => "washing machine",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -613,7 +611,7 @@ return new class extends Migration
                 "kanji" => "乾く",
                 "hiragana" => "かわく",
                 "english" => "to get dry",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -622,7 +620,7 @@ return new class extends Migration
                 "kanji" => "乾かす",
                 "hiragana" => "かわかす",
                 "english" => "to dry",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -631,7 +629,7 @@ return new class extends Migration
                 "kanji" => "乾電池",
                 "hiragana" => "かんでんち",
                 "english" => "dry cell battery",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -640,7 +638,7 @@ return new class extends Migration
                 "kanji" => "乾燥する",
                 "hiragana" => "かんそうする",
                 "english" => "to dry",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -649,7 +647,7 @@ return new class extends Migration
                 "kanji" => "乾燥機",
                 "hiragana" => "かんそうき",
                 "english" => "dryer",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -658,7 +656,7 @@ return new class extends Migration
                 "kanji" => "干す",
                 "hiragana" => "ほす",
                 "english" => "to dry",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -667,7 +665,7 @@ return new class extends Migration
                 "kanji" => "針",
                 "hiragana" => "はり",
                 "english" => "needle",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -676,7 +674,7 @@ return new class extends Migration
                 "kanji" => "針路",
                 "hiragana" => "しんろ",
                 "english" => "course",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -685,7 +683,7 @@ return new class extends Migration
                 "kanji" => "方針",
                 "hiragana" => "ほうしん",
                 "english" => "objective, plan",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -694,7 +692,7 @@ return new class extends Migration
                 "kanji" => "糸",
                 "hiragana" => "いと",
                 "english" => "thread",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -703,7 +701,7 @@ return new class extends Migration
                 "kanji" => "毛糸",
                 "hiragana" => "けいと",
                 "english" => "knitting wool",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -712,7 +710,7 @@ return new class extends Migration
                 "kanji" => "帽子",
                 "hiragana" => "ぼうし",
                 "english" => "hat",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -721,7 +719,7 @@ return new class extends Migration
                 "kanji" => "革",
                 "hiragana" => "かわ",
                 "english" => "leather",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -730,7 +728,7 @@ return new class extends Migration
                 "kanji" => "革靴",
                 "hiragana" => "かわぐつ",
                 "english" => "leather shoes",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -739,7 +737,7 @@ return new class extends Migration
                 "kanji" => "靴",
                 "hiragana" => "くつ",
                 "english" => "shoes",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -748,7 +746,7 @@ return new class extends Migration
                 "kanji" => "長靴",
                 "hiragana" => "ながぐつ",
                 "english" => "boots",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -757,7 +755,7 @@ return new class extends Migration
                 "kanji" => "磨く",
                 "hiragana" => "みがく",
                 "english" => "to brush",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -766,7 +764,7 @@ return new class extends Migration
                 "kanji" => "歯磨き",
                 "hiragana" => "はみがき",
                 "english" => "toothbrushing",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -775,7 +773,7 @@ return new class extends Migration
                 "kanji" => "綿",
                 "hiragana" => "めん",
                 "english" => "cotton",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -784,7 +782,7 @@ return new class extends Migration
                 "kanji" => "綿",
                 "hiragana" => "わた",
                 "english" => "cotton",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -793,7 +791,7 @@ return new class extends Migration
                 "kanji" => "木綿",
                 "hiragana" => "もめん",
                 "english" => "cotton",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -802,7 +800,7 @@ return new class extends Migration
                 "kanji" => "羊",
                 "hiragana" => "ひつじ",
                 "english" => "sheep",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -811,7 +809,7 @@ return new class extends Migration
                 "kanji" => "羊毛",
                 "hiragana" => "ようもう",
                 "english" => "wool",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 2,
             ],
             [
@@ -820,7 +818,7 @@ return new class extends Migration
                 "kanji" => "居間",
                 "hiragana" => "いま",
                 "english" => "living room",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -829,7 +827,7 @@ return new class extends Migration
                 "kanji" => "居眠り",
                 "hiragana" => "いねむり",
                 "english" => "dozing, napping",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -838,7 +836,7 @@ return new class extends Migration
                 "kanji" => "居酒屋",
                 "hiragana" => "いざかや",
                 "english" => "Japanese style bar",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -847,7 +845,7 @@ return new class extends Migration
                 "kanji" => "住居",
                 "hiragana" => "じゅうきょ",
                 "english" => "dwelling, house",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -856,7 +854,7 @@ return new class extends Migration
                 "kanji" => "入居する",
                 "hiragana" => "にゅうきょする",
                 "english" => "to move in",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -865,7 +863,7 @@ return new class extends Migration
                 "kanji" => "郊外",
                 "hiragana" => "こうがい",
                 "english" => "suburbs",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -874,7 +872,7 @@ return new class extends Migration
                 "kanji" => "近郊",
                 "hiragana" => "きんこう",
                 "english" => "suburbs",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -883,7 +881,7 @@ return new class extends Migration
                 "kanji" => "庭",
                 "hiragana" => "にわ",
                 "english" => "garden",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -892,7 +890,7 @@ return new class extends Migration
                 "kanji" => "家庭",
                 "hiragana" => "かてい",
                 "english" => "home, family",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -901,7 +899,7 @@ return new class extends Migration
                 "kanji" => "校庭",
                 "hiragana" => "こうてい",
                 "english" => "schoolyard",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -910,7 +908,7 @@ return new class extends Migration
                 "kanji" => "築",
                 "hiragana" => "ちく",
                 "english" => "to build",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -919,7 +917,7 @@ return new class extends Migration
                 "kanji" => "建築",
                 "hiragana" => "けんちく",
                 "english" => "construction, architecture",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -928,7 +926,7 @@ return new class extends Migration
                 "kanji" => "建築家",
                 "hiragana" => "けんちくか",
                 "english" => "architect",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -937,7 +935,7 @@ return new class extends Migration
                 "kanji" => "新築",
                 "hiragana" => "しんちく",
                 "english" => "new building",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -946,7 +944,7 @@ return new class extends Migration
                 "kanji" => "壁",
                 "hiragana" => "かべ",
                 "english" => "wall",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -955,7 +953,7 @@ return new class extends Migration
                 "kanji" => "床屋",
                 "hiragana" => "とこや",
                 "english" => "barber",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -964,7 +962,7 @@ return new class extends Migration
                 "kanji" => "床",
                 "hiragana" => "ゆか",
                 "english" => "floor",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -973,7 +971,7 @@ return new class extends Migration
                 "kanji" => "起床する",
                 "hiragana" => "きしょうする",
                 "english" => "to get up",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -982,7 +980,7 @@ return new class extends Migration
                 "kanji" => "寝坊する",
                 "hiragana" => "ねぼうする",
                 "english" => "to oversleep",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -991,7 +989,7 @@ return new class extends Migration
                 "kanji" => "寝室",
                 "hiragana" => "しんしつ",
                 "english" => "bedroom",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1000,7 +998,7 @@ return new class extends Migration
                 "kanji" => "戸",
                 "hiragana" => "と",
                 "english" => "door",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1009,7 +1007,7 @@ return new class extends Migration
                 "kanji" => "畳む",
                 "hiragana" => "たたむ",
                 "english" => "to fold",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1018,7 +1016,7 @@ return new class extends Migration
                 "kanji" => "畳",
                 "hiragana" => "たたみ",
                 "english" => "tatami mat",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1027,7 +1025,7 @@ return new class extends Migration
                 "kanji" => "柱",
                 "hiragana" => "はしら",
                 "english" => "pillar",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1036,7 +1034,7 @@ return new class extends Migration
                 "kanji" => "電柱",
                 "hiragana" => "でんちゅう",
                 "english" => "telephone pole",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1045,7 +1043,7 @@ return new class extends Migration
                 "kanji" => "和室",
                 "hiragana" => "わしつ",
                 "english" => "Japanese style room",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1054,7 +1052,7 @@ return new class extends Migration
                 "kanji" => "和食",
                 "hiragana" => "わしょく",
                 "english" => "Japanese style meal",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1063,7 +1061,7 @@ return new class extends Migration
                 "kanji" => "平和",
                 "hiragana" => "へいわ",
                 "english" => "peace",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1072,7 +1070,7 @@ return new class extends Migration
                 "kanji" => "調和する",
                 "hiragana" => "ちょうわする",
                 "english" => "to be in harmony",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1081,7 +1079,7 @@ return new class extends Migration
                 "kanji" => "狭い",
                 "hiragana" => "せまい",
                 "english" => "narrow",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1090,7 +1088,7 @@ return new class extends Migration
                 "kanji" => "材料",
                 "hiragana" => "ざいりょう",
                 "english" => "ingredients",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1099,7 +1097,7 @@ return new class extends Migration
                 "kanji" => "木材",
                 "hiragana" => "もくざい",
                 "english" => "lumber, timber",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1108,7 +1106,7 @@ return new class extends Migration
                 "kanji" => "素材",
                 "hiragana" => "そざい",
                 "english" => "raw materials",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
             [
@@ -1117,7 +1115,7 @@ return new class extends Migration
                 "kanji" => "栄養",
                 "hiragana" => "えいよう",
                 "english" => "nutrition",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1126,7 +1124,7 @@ return new class extends Migration
                 "kanji" => "養分",
                 "hiragana" => "ようぶん",
                 "english" => "nutrients",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1135,7 +1133,7 @@ return new class extends Migration
                 "kanji" => "休養する",
                 "hiragana" => "きゅうおうする",
                 "english" => "to rest",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1144,7 +1142,7 @@ return new class extends Migration
                 "kanji" => "教養",
                 "hiragana" => "きょうよう",
                 "english" => "culture, education",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1153,7 +1151,7 @@ return new class extends Migration
                 "kanji" => "香り",
                 "hiragana" => "かおり",
                 "english" => "smell",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1162,7 +1160,7 @@ return new class extends Migration
                 "kanji" => "香水",
                 "hiragana" => "こうすい",
                 "english" => "perfume",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1171,7 +1169,7 @@ return new class extends Migration
                 "kanji" => "香辛料",
                 "hiragana" => "こうしんりょう",
                 "english" => "spices",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1180,7 +1178,7 @@ return new class extends Migration
                 "kanji" => "辛い",
                 "hiragana" => "からい",
                 "english" => "hot, spicy",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1189,7 +1187,7 @@ return new class extends Migration
                 "kanji" => "辛い",
                 "hiragana" => "つらい",
                 "english" => "painful, bitter",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1198,7 +1196,7 @@ return new class extends Migration
                 "kanji" => "辛口",
                 "hiragana" => "からくち",
                 "english" => "dry (taste)",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1207,7 +1205,7 @@ return new class extends Migration
                 "kanji" => "塩辛い",
                 "hiragana" => "しおからい",
                 "english" => "salty",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1216,7 +1214,7 @@ return new class extends Migration
                 "kanji" => "青菜",
                 "hiragana" => "あおな",
                 "english" => "green vegetables",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1225,7 +1223,7 @@ return new class extends Migration
                 "kanji" => "野菜",
                 "hiragana" => "やさい",
                 "english" => "vegetables",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1234,7 +1232,7 @@ return new class extends Migration
                 "kanji" => "塩",
                 "hiragana" => "しお",
                 "english" => "salt",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1243,7 +1241,7 @@ return new class extends Migration
                 "kanji" => "塩分",
                 "hiragana" => "えんぶん",
                 "english" => "salt content",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1252,7 +1250,7 @@ return new class extends Migration
                 "kanji" => "食塩",
                 "hiragana" => "しょくえん",
                 "english" => "table salt",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1261,7 +1259,7 @@ return new class extends Migration
                 "kanji" => "弁当",
                 "hiragana" => "べんとう",
                 "english" => "box lunch",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1270,7 +1268,7 @@ return new class extends Migration
                 "kanji" => "詰まる",
                 "hiragana" => "つまる",
                 "english" => "to be packed",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1279,7 +1277,7 @@ return new class extends Migration
                 "kanji" => "詰める",
                 "hiragana" => "つめる",
                 "english" => "to pack",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1288,7 +1286,7 @@ return new class extends Migration
                 "kanji" => "缶詰",
                 "hiragana" => "かんづめ",
                 "english" => "canned food",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1297,7 +1295,7 @@ return new class extends Migration
                 "kanji" => "箱詰め",
                 "hiragana" => "はこづめ",
                 "english" => "packing in a box",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1306,7 +1304,7 @@ return new class extends Migration
                 "kanji" => "卵",
                 "hiragana" => "たまご",
                 "english" => "egg",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1315,7 +1313,7 @@ return new class extends Migration
                 "kanji" => "卵黄",
                 "hiragana" => "らんおう",
                 "english" => "egg yolk",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1324,7 +1322,7 @@ return new class extends Migration
                 "kanji" => "小麦",
                 "hiragana" => "こむぎ",
                 "english" => "wheat",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1333,7 +1331,7 @@ return new class extends Migration
                 "kanji" => "小麦粉",
                 "hiragana" => "こむぎこ",
                 "english" => "wheat flour",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1342,7 +1340,7 @@ return new class extends Migration
                 "kanji" => "粉",
                 "hiragana" => "こな",
                 "english" => "flour",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1351,7 +1349,7 @@ return new class extends Migration
                 "kanji" => "粒",
                 "hiragana" => "つぶ",
                 "english" => "grain",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1360,7 +1358,7 @@ return new class extends Migration
                 "kanji" => "水筒",
                 "hiragana" => "すいとう",
                 "english" => "canteen, flask",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1369,7 +1367,7 @@ return new class extends Migration
                 "kanji" => "布団",
                 "hiragana" => "ふとん",
                 "english" => "futon",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1378,7 +1376,7 @@ return new class extends Migration
                 "kanji" => "同一",
                 "hiragana" => "どういつ",
                 "english" => "identity, sameness",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1387,7 +1385,7 @@ return new class extends Migration
                 "kanji" => "同僚",
                 "hiragana" => "どうりょう",
                 "english" => "colleague",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1396,7 +1394,7 @@ return new class extends Migration
                 "kanji" => "同様",
                 "hiragana" => "どうよう",
                 "english" => "same, identical",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1405,7 +1403,7 @@ return new class extends Migration
                 "kanji" => "共同",
                 "hiragana" => "きょうどう",
                 "english" => "cooperation, collaboration",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 5,
             ],
             [
@@ -1414,7 +1412,7 @@ return new class extends Migration
                 "kanji" => "6畳",
                 "hiragana" => "ろくじょう",
                 "english" => "6 tatami mats",
-                "language_level_id" => 2,
+
                 "language_chapter_id" => 3,
             ],
         ];

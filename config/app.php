@@ -57,7 +57,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    'frontend_url' => env('FRONTEND_URL', 'http://localhost:3000'),
+    'frontend_url' => env('FRONTEND_URL', 'http://localhost:5173'),
 
     'asset_url' => env('ASSET_URL'),
 
@@ -169,8 +169,17 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        App\Providers\Filament\AdminPanelProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\TelescopeServiceProvider::class,
+        App\Providers\LanguageServiceProvider::class,
+        App\Providers\LanguageLevelServiceProvider::class,
+        App\Providers\LanguageChapterServiceProvider::class,
+        App\Providers\WordServiceProvider::class,
+        App\Providers\ExamResultServiceProvider::class,
+        App\Providers\UserServiceProvider::class,
+        App\Providers\AdminServiceProvider::class,
+        App\Providers\ExamRecordServiceProvider::class,
     ])->toArray(),
 
     /*

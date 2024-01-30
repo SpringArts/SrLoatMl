@@ -9,4 +9,14 @@ class LanguageLevel extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function language()
+    {
+        return $this->belongsTo(Language::class, 'language_id');
+    }
+
+    public function languageChapters()
+    {
+        return $this->hasMany(LanguageChapter::class);
+    }
 }
